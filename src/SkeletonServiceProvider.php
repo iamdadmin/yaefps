@@ -10,9 +10,9 @@ use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentIcon;
 use Illuminate\Filesystem\Filesystem;
 use Livewire\Features\SupportTesting\Testable;
-use Spatie\LaravelPackageTools\Commands\InstallCommand;
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Iamdadmin\Yaeslpt\Commands\InstallCommand;
+use Iamdadmin\Yaeslpt\Package;
+use Iamdadmin\Yaeslpt\PackageServiceProvider;
 use VendorName\Skeleton\Commands\SkeletonCommand;
 use VendorName\Skeleton\Testing\TestsSkeleton;
 
@@ -27,7 +27,7 @@ class SkeletonServiceProvider extends PackageServiceProvider
         /*
          * This class is a Package Service Provider
          *
-         * More info: https://github.com/spatie/laravel-package-tools
+         * More info: https://github.com/iamdadmin/yaeslpt
          */
         $package->name(static::$name)
             ->hasCommands($this->getCommands())
